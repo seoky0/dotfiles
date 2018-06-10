@@ -59,6 +59,10 @@ if [ "$(uname)" ==  "Darwin" ]; then
     pyenv rehash
     pip3 install neovim
 
+    echo "Install neovim plugins"
+    curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+    sh ./installer.sh ~/.cache/dein
+
 elif [ "$(uname)" == "Linux" ]; then
     echo "Set up for Linux"
 fi
