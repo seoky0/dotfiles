@@ -9,6 +9,9 @@ if [ "$(uname)" ==  "Darwin" ]; then
         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     fi
 
+    echo "Install applications"
+    brew cask install google-japanese-ime
+
     echo "Set up font"
     git clone https://github.com/powerline/fonts.git --depth=1
     cd fonts
