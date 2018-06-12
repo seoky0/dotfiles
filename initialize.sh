@@ -11,6 +11,8 @@ if [ "$(uname)" ==  "Darwin" ]; then
 
     echo "Install applications"
     brew cask install google-japanese-ime
+    brew cask install slack
+    brew cask install docker
 
     echo "Set up font"
     git clone https://github.com/powerline/fonts.git --depth=1
