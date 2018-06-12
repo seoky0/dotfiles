@@ -28,3 +28,8 @@ on_ft = 'toml'
 [[plugins]]
 repo = 'Yggdroot/indentLine'
 hook_add = 'source ~/.config/nvim/plugins/indentLine.rc.vim'
+
+# カッコ補完
+[[plugins]]
+repo = 'cohama/lexima.vim'
+on_i = 1
