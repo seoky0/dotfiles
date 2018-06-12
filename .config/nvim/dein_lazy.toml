@@ -27,7 +27,4 @@ on_ft = 'toml'
 # indent
 [[plugins]]
 repo = 'Yggdroot/indentLine'
-hook_add = '''
-let g:indentLine_fileTypeExeclude = ['help', 'nerdtree']
-nnoremap <Space>i <C-u>:IndentLinesToggle<CR>
-'''
+hook_add = 'source ~/.config/nvim/plugins/indentLine.rc.vim'
