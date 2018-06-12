@@ -1,6 +1,12 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# Color scheme
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+hook_add='source ~/.config/nvim/plugins/iceberg.rc.vim'
+
 # ファイルツリー
 [[plugins]]
 repo = 'scrooloose/nerdtree'
+hook_add='source ~/.config/nvim/plugins/nerdtree.rc.vim'
