@@ -33,3 +33,5 @@ let g:python3_host_prog=$PYENV_ROOT.'/versions/3.6.5/bin/python'
 runtime! userautoload/init.vim
 runtime! userautoload/keymap.vim
 runtime! userautoload/options.vim
+runtime! userautoload/search.vim
+runtime! userautoload/window.vim
