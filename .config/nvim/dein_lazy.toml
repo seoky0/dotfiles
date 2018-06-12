@@ -1,3 +1,7 @@
+# indent
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
 # js syntax highlighter
 [[plugins]]
 repo = 'billyvg/tigris.nvim'
