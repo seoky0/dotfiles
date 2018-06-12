@@ -3,3 +3,8 @@
 repo = 'billyvg/tigris.nvim'
 on_ft = ['javascript', 'javascript.jsx']
 hook_post_update = 'source ~/.config/nvim/plugins/tigris.rc.vim'
+
+# toml syntax highlighter
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
