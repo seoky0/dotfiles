@@ -1,5 +1,6 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# ファイルツリー
 [[plugins]]
 repo = 'scrooloose/nerdtree'
