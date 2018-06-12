@@ -1,6 +1,11 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# 非同期で実行
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
 # Color scheme
 [[plugins]]
 repo = 'cocopon/iceberg.vim'
