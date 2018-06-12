@@ -1,7 +1,3 @@
-# indent
-[[plugins]]
-repo = 'Yggdroot/indentLine'
-
 # js syntax highlighter
 [[plugins]]
 repo = 'billyvg/tigris.nvim'
@@ -27,3 +23,11 @@ on_ft = 'typescript'
 [[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
+
+# indent
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+let g:indentLine_fileTypeExeclude = ['help', 'nerdtree']
+nnoremap <Space>i <C-u>:IndentLinesToggle<CR>
+'''
