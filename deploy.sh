@@ -4,7 +4,7 @@ echo "Deploy for Mac"
 
 for dotfile in .?*
 do
-    if [ $dotfile != '..' ] && [ $dotfile != '.git' ]
+    if [ $dotfile != '..' ] && [ $dotfile != '.git' ] && [ $dotfile != '.gitignore']
     then
         ln -sf "$PWD/$dotfile" $HOME
     fi
