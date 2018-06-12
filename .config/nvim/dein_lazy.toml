@@ -1,0 +1,5 @@
+# js syntax highlighter
+[[plugins]]
+repo = 'billyvg/tigris.nvim'
+on_ft = ['javascript', 'javascript.jsx']
+hook_post_update = 'source ~/.config/nvim/plugins/tigris.rc.vim'
