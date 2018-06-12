@@ -55,6 +55,9 @@ if [ "$(uname)" ==  "Darwin" ]; then
     goenv rehash
     exec fish -l
 
+    echo "Install typescript"
+    yarn global add typescript
+
     echo "Set up neovim"
     brew install neovim
     gem install neovim
