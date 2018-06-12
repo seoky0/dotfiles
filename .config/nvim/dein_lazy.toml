@@ -8,21 +8,11 @@ hook_post_update = 'source ~/.config/nvim/plugins/tigris.rc.vim'
 [[plugins]]
 repo = 'Quramy/tsuquyomi'
 on_ft = 'typescript'
-depends = ['vimproc']
-hook_add = 'call local#dein#lang#typescript#hook_add_tsuquyomi()'
 
-[[plugins]]
-repo = 'mhartington/nvim-typescript'
-on_ft = ['typescript']
-build = './install.sh'
-
+# TypeScript syntax highlighter
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
-on_ft  = 'typescript'
-
-[[plugins]]
-repo = 'jason0x43/vim-js-indent'
-on_ft = ['typescript', 'javascript']
+on_ft = 'typescript'
 
 # toml syntax highlighter
 [[plugins]]
