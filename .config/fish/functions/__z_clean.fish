@@ -1,0 +1,1 @@
+/Users/Kyohei/.config/fisherman/z/functions/__z_clean.fish

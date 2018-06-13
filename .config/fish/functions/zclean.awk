@@ -1,0 +1,1 @@
+/Users/Kyohei/.config/fisherman/z/functions/zclean.awk
