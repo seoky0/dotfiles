@@ -1,3 +1,8 @@
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+if = 'has("nvim")'
+hook_source = 'source ~/.config/nvim/plugins/denite.rc.vim'
+
 # filetype checker
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'

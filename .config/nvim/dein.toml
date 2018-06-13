@@ -1,11 +1,6 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-[[plugins]]
-repo = 'Shougo/denite.nvim'
-if = 'has("nvim")'
-hook_add = 'source ~/.config/nvim/plugins/denite.rc.vim'
-
 # 非同期で実行
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
