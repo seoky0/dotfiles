@@ -2,6 +2,14 @@
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
 
+# emmet
+[[plugins]]
+repo = 'mattn/emmet-vim'
+on_ft = ['javascript', 'javascript.jsx', 'html', 'html.eruby']
+hook_post_update = '''
+let g:user_emmet_leader_key = ','
+'''
+
 # html
 [[plugins]]
 repo = 'othree/html5.vim'
