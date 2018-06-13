@@ -26,7 +26,6 @@ hook_add='source ~/.config/nvim/plugins/nerdtree.rc.vim'
 repo = 'junegunn/fzf'
 build = './install --all'
 merged = 0
-hook_add = 'source ~/.config/nvim/plugins/fzf.rc.vim'
 
 # fzf for vim
 [[plugins]]
