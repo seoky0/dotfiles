@@ -8,8 +8,8 @@ nnoremap 0 O<Esc>^D
 " 空行を作成して改行する
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
 " 移動
-nnoremap <C-j> <C-d>
-nnoremap <C-k> <C-u>
+" nnoremap <C-j> <C-d>
+" nnoremap <C-k> <C-u>
 " :qをsqに割当て
 nnoremap sq :<C-u>q<CR>
 nnoremap sQ :<C-u>bd<CR>
