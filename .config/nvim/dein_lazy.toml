@@ -36,6 +36,12 @@ on_ft = 'typescript'
 repo = 'leafgarland/typescript-vim'
 on_ft = 'typescript'
 
+# Slim syntax highlighter
+[[plugins]]
+repo = 'slim-template/vim-slim'
+on_ft = 'slim'
+
+
 # toml syntax highlighter
 [[plugins]]
 repo = 'cespare/vim-toml'
