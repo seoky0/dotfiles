@@ -40,10 +40,10 @@ if [ "$(uname)" ==  "Darwin" ]; then
     echo 'set --export PATH  "$HOME/.anyenv/bin" $PATH' >> ~/.config/fish/config.fish
     exec fish -l
     mkdir $HOME/.anyenv/envs
-    anyenv pyenv
-    anyenv ndenv
-    anyenv rbenv
-    anyenv goenv
+    anyenv install pyenv
+    anyenv install ndenv
+    anyenv install rbenv
+    anyenv install goenv
     exec fish -l
 
     echo "Install programming languages"
