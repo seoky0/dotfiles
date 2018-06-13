@@ -54,3 +54,7 @@ hook_add = 'source ~/.config/nvim/plugins/ale.rc.vim'
 repo = 'itchyny/lightline.vim'
 hook_add = 'source ~/.config/nvim/plugins/lightline.rc.vim'
 on_source = ['vim-fugitive', 'ale']
+
+# コメントアウトのトグル
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
