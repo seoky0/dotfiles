@@ -46,3 +46,12 @@ on_i = 1
 # ホワイトスペースを可視化
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
+
+# 非同期での補完フレームワーク
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+if = "has('nvim')"
+on_i = 1
+hook_source = '''
+let g:deoplete#enable_at_startup = 1
+'''
