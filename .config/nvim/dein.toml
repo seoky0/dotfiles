@@ -53,3 +53,7 @@ on_source = ['vim-fugitive', 'ale']
 # コメントアウトのトグル
 [[plugins]]
 repo = 'tomtom/tcomment_vim'
+
+# スニペット
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'

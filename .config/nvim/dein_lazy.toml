@@ -79,3 +79,9 @@ repo = 'carlitux/deoplete-ternjs'
 on_ft = ['javascript', 'javascript.jsx']
 build = 'npm install -g tern'
 depends = ['deoplete.nvim']
+
+# スニペット
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+depends = ['neosnippet-snippets']
+hook_add = 'source ~/.config/nvim/plugins/neosnippet.rc.vim'
