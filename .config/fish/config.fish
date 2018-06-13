@@ -63,3 +63,10 @@ alias grmtp="git push -u origin"          # リモートリポジトリにプッ
 alias gpul="git pull origin"
 alias gpus="git push origin"
 
+# keybind
+function fish_user_key_bindings
+  #peco
+  bind \cr peco_select_history
+  bind \cf peco_change_directory
+end
+
