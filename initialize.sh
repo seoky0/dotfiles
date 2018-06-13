@@ -16,12 +16,16 @@ if [ "$(uname)" ==  "Darwin" ]; then
     brew cask install clipy
 
     echo "Install packages"
+    brew install git
     brew install yarn --without-node:
     brew install ripgrep
     brew install fzf
     brew install peco
     brew install z
     brew install tmux
+
+    echo "Install theme"
+    git clone https://github.com/Arc0re/Iceberg-iTerm2.git
 
     echo "Set up font"
     git clone https://github.com/powerline/fonts.git --depth=1
