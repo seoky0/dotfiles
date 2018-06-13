@@ -42,3 +42,9 @@ on_i = 1
 # ホワイトスペースを可視化
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
+
+# Asynchronous syntax checker
+[[plugins]]
+repo = 'w0rp/ale'
+on_ft = ['ruby', 'javascript', 'javascript.jsx', 'typescript']
+hook_add = 'source ~/.config/nvim/plugins/ale.rc.vim'
