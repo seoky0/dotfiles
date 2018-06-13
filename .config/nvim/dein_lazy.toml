@@ -65,9 +65,7 @@ repo = 'bronson/vim-trailing-whitespace'
 repo = 'Shougo/deoplete.nvim'
 if = "has('nvim')"
 on_i = 1
-hook_source = '''
-let g:deoplete#enable_at_startup = 1
-'''
+hook_source = 'sour ~/.config/nvim/plugins/deoplete.rc.vim'
 
 # JavaScript補完
 [[plugins]]
