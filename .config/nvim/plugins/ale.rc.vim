@@ -17,7 +17,7 @@ let g:ale_set_quickfix = 1
 let g:ale_open_list = 1
 let g:ale_sign_error = '⨉'
 let g:ale_sign_warning = '⚠'
-
+let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 " 動いていないようなのであとで直す
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
