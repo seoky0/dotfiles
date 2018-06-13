@@ -14,8 +14,8 @@ nnoremap <C-k> <C-u>
 nnoremap sq :<C-u>q<CR>
 nnoremap sQ :<C-u>bd<CR>
 " escキーをC-jに割当
-noremap <C-d> <Esc>
-noremap! <C-d> <Esc>
+inoremap <silent> jj <ESC>
+inoremap <silent> kk <ESC>
 " 行が折り返し表示されていた場合、行単位ではなく表示行単位でカーソルを移動する
 nnoremap j gj
 nnoremap k gk
