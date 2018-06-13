@@ -39,6 +39,10 @@ hook_add = 'source ~/.config/nvim/plugins/fzf-vim.rc.vim'
 repo = "tpope/vim-fugitive"
 hook_add = 'source ~/.config/nvim/plugins/vim-fugitive.rc.vim'
 
+# Gitの編集箇所を表示
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
 # Asynchronous syntax checker
 [[plugins]]
 repo = 'w0rp/ale'
