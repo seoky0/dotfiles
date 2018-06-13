@@ -45,3 +45,9 @@ hook_add = 'source ~/.config/nvim/plugins/vim-fugitive.rc.vim'
 repo = 'w0rp/ale'
 on_ft = ['ruby', 'javascript', 'javascript.jsx', 'typescript']
 hook_add = 'source ~/.config/nvim/plugins/ale.rc.vim'
+
+# statusline
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = 'source ~/.config/nvim/plugins/lightline.rc.vim'
+on_source = ['vim-fugitive', 'ale']
