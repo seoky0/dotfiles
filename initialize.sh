@@ -19,6 +19,9 @@ if [ "$(uname)" ==  "Darwin" ]; then
     brew install yarn --without-node:
     brew install ripgrep
     brew install fzf
+    brew install peco
+    brew install z
+    brew install tmux
 
     echo "Set up font"
     git clone https://github.com/powerline/fonts.git --depth=1
