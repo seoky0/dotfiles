@@ -17,6 +17,7 @@ if [ "$(uname)" ==  "Darwin" ]; then
 
     echo "Install packages"
     brew install yarn --without-node:
+    brew install ripgrep
     brew install fzf
 
     echo "Set up font"
