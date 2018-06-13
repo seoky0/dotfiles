@@ -14,7 +14,10 @@ if [ "$(uname)" ==  "Darwin" ]; then
     brew cask install slack
     brew cask install docker
     brew cask install clipy
+
+    echo "Install packages"
     brew install yarn --without-node:
+    brew install fzf
 
     echo "Set up font"
     git clone https://github.com/powerline/fonts.git --depth=1
