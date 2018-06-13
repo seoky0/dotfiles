@@ -1,3 +1,7 @@
+# filetype checker
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
 # html
 [[plugins]]
 repo = 'othree/html5.vim'
