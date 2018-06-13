@@ -12,6 +12,6 @@ call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
       \ '*.min.*',
       \ 'img/',
       \ 'fonts/',
-      \ 'bin/'
+      \ 'bin/',
       \ 'node_modules/',
       \ 'tmp/'])
