@@ -64,7 +64,7 @@ alias gpul="git pull origin"
 alias gpus="git push origin"
 
 # tmuxエイリアス
-alias tmux-n="tmux new -s"
+alias tmux-n="tmux new-session \; source-file ~/.tmux/session"
 alias tmux-a="tmux a -t"
 alias tmux-k="tmux kill-session -t"
 alias tmux-ks="tmux kill_server"
