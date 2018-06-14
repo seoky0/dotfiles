@@ -1,3 +1,4 @@
 configstore/
 .config/yarn/
 .config/karabiner/assets/
+.config/fish/fishd.*
