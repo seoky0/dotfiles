@@ -22,3 +22,6 @@ let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 " エラー箇所の移動
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
+" ALEFixのキーバインド:
+noremap <Space>a :<C-u>ALEFix<CR>
