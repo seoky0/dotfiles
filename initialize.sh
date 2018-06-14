@@ -66,8 +66,10 @@ if [ "$(uname)" ==  "Darwin" ]; then
     goenv rehash
     exec fish -l
 
-    echo "Install typescript"
+    echo "Install yarn packages"
     yarn global add typescript
+    yarn global add react-native-cli
+    yarn global add neovim
 
     echo "Set up neovim"
     brew install neovim
