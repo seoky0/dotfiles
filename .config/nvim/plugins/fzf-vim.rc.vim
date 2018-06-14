@@ -4,3 +4,6 @@ command! -bang -nargs=* Rg
   \   fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'right:50%:wrap'))
 
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
+" Rgのキーバインド
+noremap <Space> :<C-u>Rg<CR>
