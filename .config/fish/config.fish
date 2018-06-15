@@ -24,6 +24,10 @@ set -x NDENV_ROOT "$HOME/.anyenv/envs/ndenv"
 set -x PATH $PATH "$HOME/.anyenv/envs/ndenv/bin"
 set -x PATH $NDENV_ROOT/shims $PATH
 
+# GOPATH
+set -x GOPATH "$HOME/dev"
+set -x PATH $PATH "$GOPATH/bin"
+
  #cdコマンド
 function cd
   builtin cd $argv
