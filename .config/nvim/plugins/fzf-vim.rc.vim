@@ -6,4 +6,4 @@ command! -bang -nargs=* Rg
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " Rgのキーバインド
-noremap <Space> :<C-u>Rg<CR>
+noremap <Space>f :<C-u>Rg<CR>
