@@ -109,3 +109,7 @@ depends = ['deoplete.nvim']
 repo = 'Shougo/neosnippet.vim'
 depends = ['neosnippet-snippets']
 hook_add = 'source ~/.config/nvim/plugins/neosnippet.rc.vim'
+# jsx synta highlighter
+[[plugins]]
+repo = 'mxw/vim-jsx'
+on_ft = ['javascript', 'javascript.jsx']
