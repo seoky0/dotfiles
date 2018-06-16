@@ -57,3 +57,15 @@ repo = 'tomtom/tcomment_vim'
 # スニペット
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
+
+# LSP
+# solargraphではsocketを開く必要がある
+# nohup solargraph socket & を起動時に実行する
+[[plugins]]
+repo = 'autozimu/LanguageClient-neovim'
+rev = 'next'
+build = '''
+bash install.sh
+solargraph server
+'''
+hook_add = 'source ~/.config/nvim/plugins/languageClient-neovim.rc.vim'
