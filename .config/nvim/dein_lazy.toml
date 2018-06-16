@@ -95,7 +95,7 @@ repo = 'Shougo/deoplete.nvim'
 if = "has('nvim')"
 on_i = 1
 build = ':UpdateRemotePlugins'
-hook_source = 'sour ~/.config/nvim/plugins/deoplete.rc.vim'
+hook_source = 'source ~/.config/nvim/plugins/deoplete.rc.vim'
 
 # JavaScript補完
 [[plugins]]
