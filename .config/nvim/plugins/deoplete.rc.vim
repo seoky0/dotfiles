@@ -36,3 +36,7 @@ let g:deoplete#enable_refresh_always = 0
 let g:deoplete#enable_camel_case = 1
 let g:deoplete#skip_chars = ['(', ')']
 
+inoremap <expr> '  pumvisible() ? deoplete#close_popup() : "'"
+
+call deoplete#custom#source('_', 'matchers', ['matcher_head'])
+
