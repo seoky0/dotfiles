@@ -79,6 +79,11 @@ if [ "$(uname)" ==  "Darwin" ]; then
     pyenv rehash
     pip3 install neovim
 
+    echo "Install LSP"
+    yarn global add javascript-typescript-langserver
+    gem install solargraph
+    pip install 'python-language-server[all]'
+
     echo "Install neovim plugins"
     curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
     sh ./installer.sh ~/.cache/dein
