@@ -1,18 +1,15 @@
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_refresh_always = 0
-let g:deoplete#enable_camel_case = 1
-let g:deoplete#skip_chars = ['(', ')']
-let g:deoplete#omni_patterns = {}
-let g:deoplete#omni_patterns.javascript = '[^. *\t]\.\w*'
-let g:deoplete#omni#input_patterns = {}
-let g:deoplete#omni#input_patterns.ruby =
-      \ ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
-let g:deoplete#omni#functions = {}
-let g:deoplete#omni#functions.javascript = [
-		  \ 'tern#Complete',
-		  \ 'jspc#omni'
-		  \]
+" let g:deoplete#omni_patterns = {}
+" let g:deoplete#omni_patterns.javascript = '[^. *\t]\.\w*'
+" let g:deoplete#omni#input_patterns = {}
+" let g:deoplete#omni#input_patterns.ruby =
+"       \ ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
+" let g:deoplete#omni#functions = {}
+" let g:deoplete#omni#functions.javascript = [
+" 		  \ 'tern#Complete',
+" 		  \ 'jspc#omni'
+" 		  \]
 
+let g:deoplete#enable_at_startup = 1
 " <TAB>: completion.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -34,4 +31,8 @@ inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function() abort
   return deoplete#cancel_popup() . "\<CR>"
 endfunction
+
+let g:deoplete#enable_refresh_always = 0
+let g:deoplete#enable_camel_case = 1
+let g:deoplete#skip_chars = ['(', ')']
 
