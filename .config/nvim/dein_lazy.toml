@@ -97,6 +97,12 @@ on_i = 1
 build = ':UpdateRemotePlugins'
 hook_source = 'source ~/.config/nvim/plugins/deoplete.rc.vim'
 
+# スニペット
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+depends = ['neosnippet-snippets']
+hook_source = 'source ~/.config/nvim/plugins/neosnippet.rc.vim'
+
 # JavaScript補完
 [[plugins]]
 repo = 'carlitux/deoplete-ternjs'
@@ -104,11 +110,6 @@ on_ft = ['javascript', 'javascript.jsx']
 build = 'npm install -g tern'
 depends = ['deoplete.nvim']
 
-# スニペット
-[[plugins]]
-repo = 'Shougo/neosnippet.vim'
-depends = ['neosnippet-snippets']
-hook_add = 'source ~/.config/nvim/plugins/neosnippet.rc.vim'
 # jsx synta highlighter
 [[plugins]]
 repo = 'mxw/vim-jsx'
