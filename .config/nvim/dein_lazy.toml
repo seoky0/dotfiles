@@ -61,6 +61,17 @@ hook_post_update = 'source ~/.config/nvim/plugins/tigris.rc.vim'
 # repo = 'Quramy/tsuquyomi'
 # on_ft = 'typescript'
 
+# Vue syntax highlighter
+[[plugins]]
+repo = 'posva/vim-vue'
+on_ft = 'vue'
+hook_add = '''
+set iskeyword+=$
+set iskeyword+=-
+autocmd MyAutoCmd FileType vue syntax sync fromstart
+let g:ft = ''
+'''
+
 # TypeScript syntax highlighter
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
