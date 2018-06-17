@@ -34,8 +34,9 @@ repo = 'Shougo/context_filetype.vim'
 # emmet
 [[plugins]]
 repo = 'mattn/emmet-vim'
-on_ft = ['javascript', 'javascript.jsx', 'html', 'html.eruby']
-hook_post_update = '''
+on_ft = ['javascript', 'javascript.jsx', 'html', 'html.eruby', 'vue']
+on_i = 1
+hook_add = '''
 let g:user_emmet_leader_key = ','
 '''
 
