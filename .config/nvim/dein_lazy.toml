@@ -52,9 +52,9 @@ on_ft = ['javascript', 'javascript.jsx']
 hook_post_update = 'source ~/.config/nvim/plugins/tigris.rc.vim'
 
 # JavaScript indent
-[[plugins]]
-repo = 'jason0x43/vim-js-indent'
-on_ft = ['javascript', 'javascript.jsx', 'typescript']
+# [[plugins]]
+# repo = 'jason0x43/vim-js-indent'
+# on_ft = ['javascript', 'javascript.jsx', 'typescript']
 
 # TypeScript
 # [[plugins]]
