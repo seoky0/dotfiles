@@ -57,9 +57,9 @@ repo = 'jason0x43/vim-js-indent'
 on_ft = ['javascript', 'javascript.jsx', 'typescript']
 
 # TypeScript
-[[plugins]]
-repo = 'Quramy/tsuquyomi'
-on_ft = 'typescript'
+# [[plugins]]
+# repo = 'Quramy/tsuquyomi'
+# on_ft = 'typescript'
 
 # TypeScript syntax highlighter
 [[plugins]]
@@ -115,3 +115,4 @@ depends = ['deoplete.nvim']
 [[plugins]]
 repo = 'mxw/vim-jsx'
 on_ft = ['javascript', 'javascript.jsx']
+
