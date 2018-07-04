@@ -112,7 +112,7 @@ hook_source = 'source ~/.config/nvim/plugins/deoplete.rc.vim'
 # スニペット
 [[plugins]]
 repo = 'Shougo/neosnippet.vim'
-depends = ['neosnippet-snippets']
+depends = ['neosnippet-snippets', 'context_filetype']
 hook_source = 'source ~/.config/nvim/plugins/neosnippet.rc.vim'
 
 # JavaScript補完
