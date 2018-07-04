@@ -104,10 +104,14 @@ repo = 'bronson/vim-trailing-whitespace'
 # 非同期での補完フレームワーク
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
+depends = 'context_filetype.vim'
 if = "has('nvim')"
-on_i = 1
+on_event = 'InsertEnter'
 build = ':UpdateRemotePlugins'
-hook_source = 'source ~/.config/nvim/plugins/deoplete.rc.vim'
+hook_source = '''
+call deoplete#enable()
+source ~/.config/nvim/plugins/deoplete.rc.vim
+'''
 
 # スニペット
 [[plugins]]
