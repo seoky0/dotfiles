@@ -1,12 +1,16 @@
 let g:ale_linters = {
     \   'ruby': ['rubocop'],
     \   'javascript': ['eslint'],
+    \   'typescript': ['tslint'],
+    \   'python': ['autopep8']
     \ }
 let g:ale_fixers = {}
 let g:ale_fixers = {
-      \ 'javascript': ['eslint'],
-      \ 'ruby': ['rubocop']
-      \}
+    \   'ruby': ['rubocop'],
+    \   'javascript': ['eslint'],
+    \   'typescript': ['tslint'],
+    \   'python': ['autopep8']
+    \}
 
 let g:ale_javascript_prettier_use_local_config = 1
 let g:ale_sign_column_always = 1
