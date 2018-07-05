@@ -1,0 +1,5 @@
+split-window -v -p 30
+split-window -h -p 66
+split-window -h -p 50
+select-pane -U
+split-window -h -p 50
