@@ -114,5 +114,5 @@ depends = ['deoplete.nvim']
 # jsx synta highlighter
 [[plugins]]
 repo = 'mxw/vim-jsx'
-on_ft = ['javascript', 'javascript.jsx']
+on_ft = ['javascript', 'javascript.jsx', 'typescript']
 
