@@ -51,16 +51,6 @@ repo = 'billyvg/tigris.nvim'
 on_ft = ['javascript', 'javascript.jsx']
 hook_post_update = 'source ~/.config/nvim/plugins/tigris.rc.vim'
 
-# JavaScript indent
-# [[plugins]]
-# repo = 'jason0x43/vim-js-indent'
-# on_ft = ['javascript', 'javascript.jsx', 'typescript']
-
-# TypeScript
-# [[plugins]]
-# repo = 'Quramy/tsuquyomi'
-# on_ft = 'typescript'
-
 # Vue syntax highlighter
 [[plugins]]
 repo = 'posva/vim-vue'
@@ -86,11 +76,6 @@ on_ft = 'slim'
 [[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
-
-# indent
-[[plugins]]
-repo = 'Yggdroot/indentLine'
-hook_add = 'source ~/.config/nvim/plugins/indentLine.rc.vim'
 
 # カッコ補完
 [[plugins]]
