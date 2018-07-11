@@ -75,3 +75,8 @@ bash install.sh
 solargraph server
 '''
 hook_add = 'source ~/.config/nvim/plugins/languageClient-neovim.rc.vim'
+
+# インデントの可視化
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+hook_add = 'source ~/.config/nvim/plugins/vim-indent-guide.rc.vim'
