@@ -94,7 +94,6 @@ if = "has('nvim')"
 on_event = 'InsertEnter'
 build = ':UpdateRemotePlugins'
 hook_source = '''
-call deoplete#enable()
 source ~/.config/nvim/plugins/deoplete.rc.vim
 '''
 
