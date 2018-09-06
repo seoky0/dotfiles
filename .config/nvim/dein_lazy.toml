@@ -110,6 +110,7 @@ repo = 'carlitux/deoplete-ternjs'
 on_ft = ['javascript', 'javascript.jsx']
 build = 'npm install -g tern'
 depends = ['deoplete.nvim']
+hook_add = 'source ~/.config/nvim/plugins/deoplete-ternjs.rc.vim'
 
 # jsx synta highlighter
 [[plugins]]
