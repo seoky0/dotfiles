@@ -124,6 +124,14 @@ yard config --gem-install-yri
 '''
 depends = ['deoplete.nvim']
 
+# Go補完
+[[plugins]]
+repo = 'zchee/deoplete-go'
+on_ft = ['go']
+build = '''
+make
+'''
+
 # jsx synta highlighter
 [[plugins]]
 repo = 'mxw/vim-jsx'
