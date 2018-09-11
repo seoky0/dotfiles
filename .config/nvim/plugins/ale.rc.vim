@@ -6,6 +6,7 @@ let g:ale_linters = {
     \   'c': ['clang-format'],
     \   'cpp': ['clang-format'],
     \   'vue': ['prettier', 'eslint'],
+    \   'go': ['gofmt'],
     \ }
 let g:ale_fixers = {}
 let g:ale_fixers = {
@@ -16,6 +17,7 @@ let g:ale_fixers = {
     \   'c': ['clang-format'],
     \   'cpp': ['clang-format'],
     \   'vue': ['prettier', 'eslint'],
+    \   'go': ['gofmt'],
     \}
 
 let g:ale_javascript_prettier_use_local_config = 1
