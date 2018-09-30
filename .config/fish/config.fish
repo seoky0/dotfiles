@@ -28,6 +28,9 @@ set -x PATH $NDENV_ROOT/shims $PATH
 set -x GOPATH "$HOME/dev"
 set -x PATH $PATH "$GOPATH/bin"
 
+# editor
+set -x EDITOR "nvim"
+
  #cdコマンド
 function cd
   builtin cd $argv
