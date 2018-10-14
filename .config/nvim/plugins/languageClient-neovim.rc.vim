@@ -1,16 +1,20 @@
 set hidden
 
 let g:LanguageClient_serverCommands = {}
-let g:LanguageClient_serverCommands = {
-    \ 'javascript': ['javascript-typescript-stdio'],
-    \ 'typescript': ['javascript-typescript-stdio'],
-    \ 'javascript.jsx': ['javascript-typescript-stdio'],
-    \ 'ruby': ['tcp://127.0.0.1:7658'],
-    \ 'python': ['pyls'],
-    \ 'html': [],
-    \ 'css': [],
-    \ 'vue': ['vls'],
-    \ }
+" let g:LanguageClient_serverCommands = {
+"     \ 'html': [],
+"     \ 'css': [],
+"     \ 'vue': ['vls'],
+"     \ 'javascript': ['javascript-typescript-stdio'],
+"     \ 'typescript': ['javascript-typescript-stdio'],
+"     \ 'ruby': ['solargraph', 'stdio'],
+"     \ }
+
+if executable('ruby')
+  let g:LanguageClient_serverCommands = {
+      \ 'ruby': ['solargraph', 'stdio'],
+      \ }
+endif
 
 augroup LanguageClient_config
     autocmd!
