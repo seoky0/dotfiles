@@ -16,6 +16,12 @@ if executable('ruby')
       \ }
 endif
 
+if executable('go-langserver')
+  let g:LanguageClient_serverCommands = {
+      \ 'go': ['go-langserver', 'stdio'],
+      \ }
+endif
+
 augroup LanguageClient_config
     autocmd!
     autocmd User LanguageClientStarted setlocal signcolumn=yes
