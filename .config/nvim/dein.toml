@@ -41,7 +41,6 @@ repo = 'airblade/vim-gitgutter'
 # Asynchronous syntax checker
 [[plugins]]
 repo = 'w0rp/ale'
-on_ft = ['ruby', 'javascript', 'javascript.jsx', 'typescript']
 hook_add = 'source ~/.config/nvim/plugins/ale.rc.vim'
 
 # statusline
