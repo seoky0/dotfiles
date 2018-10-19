@@ -36,3 +36,4 @@ runtime! userautoload/keymap.vim
 runtime! userautoload/options.vim
 runtime! userautoload/search.vim
 runtime! userautoload/window.vim
+runtime! userautoload/vim-submode.vim
