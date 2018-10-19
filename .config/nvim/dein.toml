@@ -79,3 +79,7 @@ hook_add = 'source ~/.config/nvim/plugins/languageClient-neovim.rc.vim'
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
 hook_add = 'source ~/.config/nvim/plugins/vim-indent-guide.rc.vim'
+
+# 画面のサイズ変更
+[[plugins]]
+repo = 'kana/vim-submode'
