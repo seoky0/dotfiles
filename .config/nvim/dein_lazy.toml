@@ -119,7 +119,7 @@ build = '''
 make
 '''
 
-# jsx synta highlighter
+# jsx syntax highlighter
 [[plugins]]
 repo = 'mxw/vim-jsx'
 on_ft = ['javascript', 'javascript.jsx', 'typescript']
