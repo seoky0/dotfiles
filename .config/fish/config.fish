@@ -85,3 +85,4 @@ function fish_user_key_bindings
   bind \cf peco_change_directory
 end
 
+set -g fish_user_paths "/usr/local/opt/mysql@5.7/bin" $fish_user_paths
