@@ -47,6 +47,9 @@ set -x COMPOSE_HTTP_TIMEOUT 500
 set -x LC_CTYPE en_US.UTF-8
 set -x TERM xterm-256color
 
+# rustup
+set -x PATH $PATH "$HOME/.cargo/bin"
+
  #cdコマンド
 function cd
   builtin cd $argv
