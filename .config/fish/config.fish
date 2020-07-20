@@ -31,6 +31,9 @@ set -x PATH $PATH "$GOPATH/bin"
 # editor
 set -x EDITOR "nvim"
 
+# ghq
+set -x GHQ_ROOT "$HOME/dev/src"
+
 # Docker
 set -x COMPOSE_HTTP_TIMEOUT 500
 
