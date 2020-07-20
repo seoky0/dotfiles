@@ -31,6 +31,12 @@ set -x PATH $PATH "$GOPATH/bin"
 # editor
 set -x EDITOR "nvim"
 
+# pip
+set -x PATH $PATH "/.local/bin"
+
+set -x LANG "ja_JP.UTF-8"
+set -x LC_ALL "ja_JP.UTF-8"
+
 # ghq
 set -x GHQ_ROOT "$HOME/dev/src"
 
