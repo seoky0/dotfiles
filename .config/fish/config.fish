@@ -31,6 +31,10 @@ set -x PATH $PATH "$GOPATH/bin"
 # editor
 set -x EDITOR "nvim"
 
+# douci https://github.com/skanehira/docui
+set -x LC_CTYPE en_US.UTF-8
+set -x TERM xterm-256color
+
  #cdコマンド
 function cd
   builtin cd $argv
