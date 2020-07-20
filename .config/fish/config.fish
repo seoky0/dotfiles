@@ -77,12 +77,23 @@ alias tmux-a="tmux a -t"
 alias tmux-k="tmux kill-session -t"
 alias tmux-ks="tmux kill_server"
 
+# ghq + peco
+function ghq_peco_repo
+  set selected_repository (ghq list -p | peco --query "$LBUFFER")
+  if [ -n "$selected_repository" ]
+    cd $selected_repository
+    echo " $selected_repository "
+    commandline -f repaint
+  end
+end
+
 # keybind
 function fish_user_key_bindings
   #peco
   bind \cr peco_select_history
-  # あとでpeco_change_directory.fishを修正する  
-  bind \cf peco_change_directory
+  # peco + ghq
+  bind \cf ghq_peco_repo
+  # bind \cf peco_change_directory
 end
 
 set -g fish_user_paths "/usr/local/opt/mysql@5.7/bin" $fish_user_paths
