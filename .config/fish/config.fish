@@ -19,10 +19,10 @@ set -x PATH $PATH "$HOME/.anyenv/envs/goenv/bin"
 set -gx PATH $GOENV_ROOT/shims $PATH
 set -gx GOENV_SHELL fish
 
-# ndenv
-set -x NDENV_ROOT "$HOME/.anyenv/envs/ndenv"
-set -x PATH $PATH "$HOME/.anyenv/envs/ndenv/bin"
-set -x PATH $NDENV_ROOT/shims $PATH
+# nodenv
+set -x NODENV_ROOT "$HOME/.anyenv/envs/nodenv"
+set -x PATH $PATH "$HOME/.anyenv/envs/nodenv/bin"
+set -x PATH $NODENV_ROOT/shims $PATH
 
 # jenv
 set -x JENV_ROOT "$HOME/.anyenv/envs/jenv"
