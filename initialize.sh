@@ -46,6 +46,7 @@ if [ "$(uname)" ==  "Darwin" ]; then
     echo 'set --export PATH  "$HOME/.anyenv/bin" $PATH' >> ~/.config/fish/config.fish
     exec fish -l
     mkdir $HOME/.anyenv/envs
+    anyenv install --ls
     anyenv install pyenv
     anyenv install ndenv
     anyenv install rbenv
