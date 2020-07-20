@@ -24,6 +24,12 @@ set -x NDENV_ROOT "$HOME/.anyenv/envs/ndenv"
 set -x PATH $PATH "$HOME/.anyenv/envs/ndenv/bin"
 set -x PATH $NDENV_ROOT/shims $PATH
 
+# jenv
+set -x JENV_ROOT "$HOME/.anyenv/envs/jenv"
+set -x PATH $PATH "$HOME/.anyenv/envs/jenv/bin"
+set -gx PATH $JENV_ROOT/shims $PATH
+set -gx JENV_SHELL fish
+
 # GOPATH
 set -x GOPATH "$HOME/dev"
 set -x PATH $PATH "$GOPATH/bin"
