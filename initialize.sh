@@ -36,14 +36,17 @@ if [ "$(uname)" ==  "Darwin" ]; then
 
     echo "Set up shell"
     brew install fish
-    curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
-    fisher omf/theme-agnoster
+    curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+    fisher add oh-my-fish/plugin-peco
+    fisher add jethrokuan/z
+    fisher add oh-my-fish/theme-agnoster
 
     echo "Set up anyenv and envs"
     git clone https://github.com/riywo/anyenv ~/.anyenv
     echo 'set --export PATH  "$HOME/.anyenv/bin" $PATH' >> ~/.config/fish/config.fish
     exec fish -l
     mkdir $HOME/.anyenv/envs
+    anyenv install --ls
     anyenv install pyenv
     anyenv install ndenv
     anyenv install rbenv
