@@ -30,6 +30,9 @@ set -x PATH $PATH "$HOME/.anyenv/envs/jenv/bin"
 set -gx PATH $JENV_ROOT/shims $PATH
 set -gx JENV_SHELL fish
 
+# direnv
+eval (direnv hook fish)
+
 # GOPATH
 set -x GOPATH "$HOME/dev"
 set -x PATH $PATH "$GOPATH/bin"
