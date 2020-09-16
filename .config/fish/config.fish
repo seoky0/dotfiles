@@ -33,6 +33,8 @@ set -gx JENV_SHELL fish
 # direnv
 eval (direnv hook fish)
 
+# tfenv
+set -x PATH $PATH "$HOME/.anyenv/envs/tfenv/bin"
 # GOPATH
 set -x GOPATH "$HOME/dev"
 set -x PATH $PATH "$GOPATH/bin"
