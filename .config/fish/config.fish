@@ -35,6 +35,10 @@ eval (direnv hook fish)
 
 # tfenv
 set -x PATH $PATH "$HOME/.anyenv/envs/tfenv/bin"
+
+# flutter
+set -x PATH $PATH "$HOME/dev/flutter/bin"
+
 # GOPATH
 set -x GOPATH "$HOME/dev"
 set -x PATH $PATH "$GOPATH/bin"
